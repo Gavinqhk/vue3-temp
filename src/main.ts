@@ -4,5 +4,4 @@ import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
 
-createApp(App).use(createPinia()).use(createPinia()).use(router)
-  .mount('#app');
+createApp(App).use(createPinia()).use(createPinia()).use(router).mount('#app');
