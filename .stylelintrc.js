@@ -46,8 +46,8 @@ module.exports = {
     'color-hex-length': 'short', // 指定十六进制颜色是否使用缩写
     'color-named': 'never', // 要求 (可能的情况下) 或 禁止使用命名的颜色
     'comment-no-empty': true, // 禁止空注释
-    'font-family-name-quotes': 'always-unless-keyword', // 指定字体名称是否需要使用引号引起来 | 期待每一个不是关键字的字体名都使用引号引起来
-    'font-weight-notation': 'numeric', // 要求使用数字或命名的 (可能的情况下) font-weight 值
+    // 'font-family-name-quotes': 'always-unless-keyword', // 指定字体名称是否需要使用引号引起来 | 期待每一个不是关键字的字体名都使用引号引起来
+    // 'font-weight-notation': 'numeric', // 要求使用数字或命名的 (可能的情况下) font-weight 值
     'property-no-vendor-prefix': true, // 禁止属性使用浏览器引擎前缀
     'value-no-vendor-prefix': true, // 禁止给值添加浏览器引擎前缀
     'selector-no-vendor-prefix': true, // 禁止使用浏览器引擎前缀
