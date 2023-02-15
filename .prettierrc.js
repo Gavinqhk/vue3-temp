@@ -10,5 +10,5 @@ module.exports = {
   jsxSingleQuote: true,
   jsxBracketSameLine: false, // 在jsx中把'>' 放同一行
   insertPragma: false, // 插入@format标识
-  ignorePath: '.prettierignore',
-};
+  ignorePath: '.prettierignore'
+}
