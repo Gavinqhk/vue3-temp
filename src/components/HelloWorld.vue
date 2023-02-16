@@ -5,6 +5,7 @@
       <span
         v-for="o in [
           'vue3',
+          'webpack',
           'pinia',
           'vue-router',
           'element-plus',

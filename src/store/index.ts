@@ -21,7 +21,7 @@ export const useCounterStore = defineStore('counter', () => {
 });
 
 export const useUserStore = defineStore('user', {
-  state: () => ({ id: 0, name: '章三', age: 18 }),
+  state: () => ({ id: 10, name: '章三', age: 18 }),
   getters: {
     age: state => state.age,
   },
