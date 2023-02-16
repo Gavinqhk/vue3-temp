@@ -2,17 +2,9 @@ import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 
 export const useCounterStore = defineStore('counter', () => {
-  // state: () => ({ count: 0 }),
-  // getters: {
-  //   double: (state) => state.count * 2,
-  // },
-  // actions: {
-  //   increment() {
-  //     this.count++;
-  //   },
-  // },
-  const count = ref(0);
+  const count = ref(1);
   const double = computed(() => count.value * 2);
+
   function increment() {
     count.value++;
   }
@@ -22,9 +14,11 @@ export const useCounterStore = defineStore('counter', () => {
 
 export const useUserStore = defineStore('user', {
   state: () => ({ id: 10, name: '章三', age: 18 }),
+
   getters: {
-    age: state => state.age,
+    agePlus: state => state.age + 1,
   },
+
   actions: {
     updateUser() {
       this.age++;
