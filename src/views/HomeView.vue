@@ -7,24 +7,22 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import axios from 'axios';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
+import { login } from '@/service/api';
 export default defineComponent({
   name: 'HomeView',
   components: {
     HelloWorld,
   },
   setup() {
-    axios
-      .post('/user/login', {
-        username: 'admin',
-        password: 'qwer',
-      })
-      .then(res => {
+    login({
+      username: 'admin',
+      password: 'qwer',
+    })
+      .then((res: any) => {
         console.log(res);
       })
-      .catch(err => {
+      .catch((err: any) => {
         console.error(err);
       });
   },
